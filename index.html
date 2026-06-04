@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Maison Pourpre | Cuisine Chinoise Traditionnelle à Paris</title>
+  <meta name="description" content="La Maison Pourpre, restaurant chinois familial au cœur du 11ᵉ arrondissement de Paris.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SÉLECTEUR DE LANGUE -->
+<div class="lang-switcher">
+  <button class="lang-btn active" data-lang="fr">FR</button>
+  <button class="lang-btn" data-lang="zh">中文</button>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="index.html" class="logo-container">
+    <img class="logo-img" src="images/logo.png" alt="Logo La Maison Pourpre">
+    <div class="logo-text">
+      <div class="chinese-name">食膳坊</div>
+      <h1>LA MAISON POURPRE</h1>
+    </div>
+  </a>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active" data-i18n="nav_home">Accueil</a></li>
+      <li><a href="menu.html" data-i18n="nav_menu">La Carte</a></li>
+      <li><a href="galerie.html" data-i18n="nav_gallery">Galerie</a></li>
+      <li><a href="apropos.html" data-i18n="nav_about">À Propos</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <img class="hero-logo" src="images/logo.png" alt="La Maison Pourpre">
+    <span class="hero-chinese" data-i18n="hero_sub">食膳坊</span>
+    <h2 data-i18n="hero_title">Cuisine Chinoise Traditionnelle</h2>
+    <div class="hero-divider"></div>
+    <p data-i18n="hero_desc">Une cuisine familiale au cœur du 11ᵉ arrondissement de Paris.</p>
+    <div class="hero-buttons">
+      <a href="menu.html" class="btn-primary" data-i18n="btn_carte">Découvrir la carte</a>
+      <a href="contact.html" class="btn-secondary" data-i18n="btn_find">Nous trouver</a>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro section">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="label" data-i18n="intro_label">Le Restaurant</span>
+      <h2 data-i18n="intro_title">La Maison Pourpre</h2>
+      <span class="ornament">❖</span>
+    </div>
+    <div class="intro-content reveal">
+      <p data-i18n="intro_p1">Un restaurant familial au cœur du quartier Belleville, proposant une cuisine chinoise préparée à la commande.</p>
+      <p data-i18n="intro_p2">Notre carte réunit des plats populaires et des spécialités régionales, cuisinés avec soin et servis dans une ambiance simple et conviviale.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ÉVENTAIL DÉCORATIF -->
+<div class="devanture">
+  <img src="images/devanture.jpg" alt="Devanture La Maison Pourpre">
+</div>
+
+<!-- AMBIANCE — 2 images uniquement -->
+<section class="section" style="background:var(--paper); padding-top:60px;">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="label" data-i18n="atm_label">Le Restaurant</span>
+      <h2 data-i18n="atm_title">Une ambiance chaleureuse</h2>
+      <span class="ornament">❖</span>
+    </div>
+    <div class="atmosphere-grid reveal">
+      <div class="atm-item">
+        <img src="images/restaurant.png" alt="Salle du restaurant La Maison Pourpre">
+      </div>
+      <div class="atm-item">
+        <img src="images/restau.png" alt="Intérieur La Maison Pourpre">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÉVENTAIL BAS -->
+<div class="fan-deco-bottom">
+  <img src="" alt="">
+</div>
+
+<!-- INFOS RAPIDES -->
+<section class="info section">
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-block reveal">
+        <h3 data-i18n="info_addr_title">Adresse</h3>
+        <p data-i18n="info_addr">13 Rue Louis Bonnet<br>75011 Paris</p>
+      </div>
+      <div class="info-block reveal">
+        <h3 data-i18n="info_phone_title">Téléphone</h3>
+        <p><a href="tel:+33954449508" style="color:var(--gold); text-decoration:none;">09 54 44 95 08</a></p>
+      </div>
+      <div class="info-block reveal">
+        <h3 data-i18n="info_hours_title">Horaires</h3>
+        <p data-i18n="info_hours">Jeudi à Mardi<br>11h30 – 22h15<br><small>Fermé le mercredi</small></p>
+      </div>
+      <div class="info-block reveal">
+        <h3 data-i18n="info_email_title">E-mail</h3>
+        <p><a href="mailto:guzhiyong1979@gmail.com" style="color:var(--gold); text-decoration:none;">guzhiyong1979@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="images/logo.png" alt="Logo La Maison Pourpre">
+    <h3>LA MAISON POURPRE</h3>
+  </div>
+  <p data-i18n="footer_tagline">Cuisine chinoise traditionnelle · Paris 11ᵉ</p>
+  <p data-i18n="footer_copy">© 2026 La Maison Pourpre</p>
+</footer>
+
+<button id="backToTop">↑</button>
+
+<script src="js/lang.js"></script>
+</body>
+</html>

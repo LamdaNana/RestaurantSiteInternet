@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie | La Maison Pourpre</title>
+  <meta name="description" content="Découvrez l'univers de La Maison Pourpre à travers une sélection de photos de plats et d'ambiance.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Galerie en grille mixte pour plus d'originalité */
+    .gal-featured {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 320px 240px;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .gal-featured .gal-item:first-child {
+      grid-row: 1 / 3;
+    }
+    .gal-featured .gal-item img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .gal-rest {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    .gal-rest .gal-item img {
+      width: 100%; height: 200px; object-fit: cover;
+    }
+    @media(max-width:768px) {
+      .gal-featured { grid-template-columns: 1fr; grid-template-rows: auto; }
+      .gal-featured .gal-item:first-child { grid-row: auto; }
+      .gal-rest { grid-template-columns: 1fr 1fr; }
+    }
+    @media(max-width:480px) {
+      .gal-rest { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- SÉLECTEUR DE LANGUE -->
+<div class="lang-switcher">
+  <button class="lang-btn active" data-lang="fr">FR</button>
+  <button class="lang-btn" data-lang="zh">中文</button>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="index.html" class="logo-container">
+    <img class="logo-img" src="images/logo.png" alt="Logo La Maison Pourpre">
+    <div class="logo-text">
+      <div class="chinese-name">食膳坊</div>
+      <h1>LA MAISON POURPRE</h1>
+    </div>
+  </a>
+  <nav>
+    <ul>
+      <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+      <li><a href="menu.html" data-i18n="nav_menu">La Carte</a></li>
+      <li><a href="galerie.html" class="active" data-i18n="nav_gallery">Galerie</a></li>
+      <li><a href="apropos.html" data-i18n="nav_about">À Propos</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('images/platmelange.png');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <img class="page-hero-logo" src="images/logo.png" alt="">
+    <span class="hero-chinese">食膳坊</span>
+    <h1 data-i18n="gal_hero_title">Galerie</h1>
+    <p data-i18n="gal_hero_desc">L'ambiance et les saveurs de notre restaurant.</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section" style="background:var(--cream); padding-bottom:40px;">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="label" data-i18n="gal_label">食膳坊</span>
+      <h2 data-i18n="gal_title">Un aperçu de nos plats</h2>
+      <span class="ornament">❖</span>
+    </div>
+    <div class="intro-content reveal">
+      <p data-i18n="gal_desc">Entre plats traditionnels et moments de partage, bienvenue dans l'univers de La Maison Pourpre.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section class="section" style="padding-top:40px;">
+  <div class="container">
+
+    <!-- Grille vedette -->
+    <div class="gal-featured reveal">
+      <div class="gal-item">
+        <img src="images/platmelange.png" alt="Plat traditionnel chinois">
+        <div class="gal-overlay"></div>
+      </div>
+      <div class="gal-item">
+        <img src="images/raviolis.png" alt="Raviolis maison">
+        <div class="gal-overlay"></div>
+      </div>
+      <div class="gal-item">
+        <img src="images/broccolipoulet.png" alt="Poulet et brocoli">
+        <div class="gal-overlay"></div>
+      </div>
+    </div>
+
+    <!-- Grille secondaire -->
+    <div class="gal-rest reveal">
+      <div class="gal-item">
+        <img src="images/aubergine.png" alt="Aubergine sautée">
+        <div class="gal-overlay"></div>
+      </div>
+      <div class="gal-item">
+        <img src="images/poivron.png" alt="Plat aux poivrons">
+        <div class="gal-overlay"></div>
+      </div>
+      <div class="gal-item">
+        <img src="images/pouletriz.png" alt="Poulet au riz">
+        <div class="gal-overlay"></div>
+      </div>
+      <div class="gal-item">
+        <img src="images/tofu.png" alt="Tofu maison">
+        <div class="gal-overlay"></div>
+      </div>
+      <div class="gal-item">
+        <img src="images/platbroccoli.png" alt="Brocoli sauté">
+        <div class="gal-overlay"></div>
+      </div>
+      <div class="gal-item">
+        <img src="images/pane.png" alt="Spécialité maison">
+        <div class="gal-overlay"></div>
+      </div>
+      <div class="gal-item">
+        <img src="images/fondue.png" alt="Fondue chinoise">
+        <div class="gal-overlay"></div>
+      </div>
+      <div class="gal-item">
+        <img src="images/platmais.png" alt="Plat au maïs">
+        <div class="gal-overlay"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close">×</button>
+  <img src="" alt="Photo agrandie">
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="images/logo.png" alt="Logo La Maison Pourpre">
+    <h3>LA MAISON POURPRE</h3>
+  </div>
+  <p data-i18n="footer_tagline">Cuisine chinoise traditionnelle · Paris 11ᵉ</p>
+  <p data-i18n="footer_copy">© 2026 La Maison Pourpre</p>
+</footer>
+
+<button id="backToTop">↑</button>
+
+<script src="js/lang.js"></script>
+<script>
+// Lightbox for gallery (all gal-item images)
+document.querySelectorAll('.gal-item img').forEach(img => {
+  img.style.cursor = 'zoom-in';
+  img.addEventListener('click', () => {
+    const lb = document.getElementById('lightbox');
+    lb.querySelector('img').src = img.src;
+    lb.classList.add('open');
+  });
+});
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target !== this.querySelector('img')) this.classList.remove('open');
+});
+document.querySelector('.lightbox-close').addEventListener('click', () => {
+  document.getElementById('lightbox').classList.remove('open');
+});
+</script>
+</body>
+</html>

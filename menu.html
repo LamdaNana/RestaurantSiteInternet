@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Carte | La Maison Pourpre</title>
+  <meta name="description" content="Découvrez la carte de La Maison Pourpre, restaurant chinois familial à Paris 11.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SÉLECTEUR DE LANGUE -->
+<div class="lang-switcher">
+  <button class="lang-btn active" data-lang="fr">FR</button>
+  <button class="lang-btn" data-lang="zh">中文</button>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="index.html" class="logo-container">
+    <img class="logo-img" src="images/logo.png" alt="Logo La Maison Pourpre">
+    <div class="logo-text">
+      <div class="chinese-name">食膳坊</div>
+      <h1>LA MAISON POURPRE</h1>
+    </div>
+  </a>
+  <nav>
+    <ul>
+      <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+      <li><a href="menu.html" class="active" data-i18n="nav_menu">La Carte</a></li>
+      <li><a href="galerie.html" data-i18n="nav_gallery">Galerie</a></li>
+      <li><a href="apropos.html" data-i18n="nav_about">À Propos</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('images/dumpling.jpg');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <img class="page-hero-logo" src="images/logo.png" alt="">
+    <span class="hero-chinese">食膳坊</span>
+    <h1 data-i18n="menu_hero_title">Notre Carte</h1>
+    <p data-i18n="menu_hero_desc">Cuisine chinoise traditionnelle préparée à la commande.</p>
+  </div>
+</section>
+
+<!-- MENU PRINCIPAL -->
+<section class="section" style="background:var(--paper);">
+  <div class="container">
+
+    <!-- ALLERGÈNES -->
+    <div class="allergen-box reveal">
+      <strong data-i18n="allergen_label">Allergènes</strong> —
+      <span data-i18n="allergen_text">Pour en savoir plus sur les ingrédients, les allergènes et les méthodes de préparation, vous pouvez appeler La Maison Pourpre.</span>
+    </div>
+
+    <!-- NAVIGATION ONGLETS -->
+    <div class="menu-nav reveal">
+      <button class="menu-nav-btn active" onclick="showCat('entrees')" data-i18n="cat_entrees">Entrées</button>
+      <button class="menu-nav-btn" onclick="showCat('specialites')" data-i18n="cat_trad">Spécialités</button>
+      <button class="menu-nav-btn" onclick="showCat('wok')" data-i18n="cat_wok">Plats Principaux</button>
+      <button class="menu-nav-btn" onclick="showCat('rice')" data-i18n="cat_rice">Riz & Nouilles</button>
+      <button class="menu-nav-btn" onclick="showCat('ricecake')" data-i18n="cat_rice_cake">Galettes & Vapeur</button>
+      <button class="menu-nav-btn" onclick="showCat('seafood')" data-i18n="cat_seafood">Fruits de Mer</button>
+    </div>
+
+    <!-- ══ ENTRÉES ══ -->
+    <div id="entrees" class="menu-section active">
+      <h2 class="menu-category-title" data-i18n="cat_entrees">Entrées</h2>
+      <p class="menu-category-cn">前菜</p>
+      <div class="menu-items">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Bœuf aux cinq parfums</div>
+            <div class="menu-item-cn">五香牛肉</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Raviolis au poulet grillé (10 pcs)</div>
+            <div class="menu-item-cn">煎饺</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Poulet à la sauce pimentée</div>
+            <div class="menu-item-cn">口水鸡</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Nems au poulet (4 pcs)</div>
+            <div class="menu-item-cn">春卷</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Radis blanc marinés</div>
+            <div class="menu-item-cn">爽口白萝</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Edamamé</div>
+            <div class="menu-item-cn">盐水毛豆</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Tofu aux œufs centenaires</div>
+            <div class="menu-item-cn">皮蛋豆腐</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ SPÉCIALITÉS ══ -->
+    <div id="specialites" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_trad">Spécialités</h2>
+      <p class="menu-category-cn">招牌菜</p>
+      <div class="menu-items">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Poulet aux cacahuètes</div>
+            <div class="menu-item-cn">宫保鸡丁</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Lamelles de porc à la sauce piquante</div>
+            <div class="menu-item-cn">鱼香肉丝</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Bœuf sauté aux poivrons</div>
+            <div class="menu-item-cn">青红牛柳</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Dés de poulet au piment</div>
+            <div class="menu-item-cn">辣子鸡丁</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Poulet croustillant</div>
+            <div class="menu-item-cn">油淋鸡</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Bœuf aux oignons</div>
+            <div class="menu-item-cn">洋葱牛肉</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Travers de porc à la sauce aigre-douce</div>
+            <div class="menu-item-cn">糖醋排骨</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Porc mariné dans un bouillon de piments</div>
+            <div class="menu-item-cn">水煮肉片</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Bœuf mariné dans un bouillon de piments</div>
+            <div class="menu-item-cn">水煮牛肉</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ PLATS PRINCIPAUX ══ -->
+    <div id="wok" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_wok">Plats Principaux</h2>
+      <p class="menu-category-cn">主菜</p>
+      <div class="menu-items">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Poitrine de porc tranchée à la sauce piquante</div>
+            <div class="menu-item-cn">回锅肉</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Travers de porc au sel et au poivre</div>
+            <div class="menu-item-cn">椒盐排骨</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Lamelles de porc piquantes</div>
+            <div class="menu-item-cn">鱼香肉丝铁板饭</div>
+            <div class="menu-item-desc">Servi avec riz, œufs, légumes</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ RIZ & NOUILLES ══ -->
+    <div id="rice" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_rice">Riz & Nouilles</h2>
+      <p class="menu-category-cn">饭面</p>
+      <div class="menu-items">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Riz cantonais</div>
+            <div class="menu-item-cn">扬州炒饭</div>
+            <div class="menu-item-desc">Cuisiné avec des saucisses chinoises</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Riz sauté aux crevettes</div>
+            <div class="menu-item-cn">虾炒饭</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Riz sauté au bœuf</div>
+            <div class="menu-item-cn">牛肉炒饭</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Riz sauté aux légumes moutarde</div>
+            <div class="menu-item-cn">蔬菜炒饭</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Riz blanc</div>
+            <div class="menu-item-cn">白米饭</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Nouilles sautées aux légumes</div>
+            <div class="menu-item-cn">蔬菜炒面</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Nouilles sautées aux crevettes</div>
+            <div class="menu-item-cn">炒虾面</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Nouilles sautées au bœuf</div>
+            <div class="menu-item-cn">牛肉炒面</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Pâte de riz sautée au bœuf</div>
+            <div class="menu-item-cn">牛肉炒河粉</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Pâte de riz sautée aux fruits de mer</div>
+            <div class="menu-item-cn">海鲜炒河粉</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Soupe de nouilles au bœuf</div>
+            <div class="menu-item-cn">牛肉面</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Soupe de nouilles aux travers de porc</div>
+            <div class="menu-item-cn">排骨面</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ GALETTES & VAPEUR ══ -->
+    <div id="ricecake" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_rice_cake">Galettes de Riz & Vapeur</h2>
+      <p class="menu-category-cn">年糕及蒸食</p>
+      <div class="menu-items">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Brioche au porc à la vapeur (6 pcs)</div>
+            <div class="menu-item-cn">小笼包</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Galette de riz sautée au porc mariné à la sauce soja</div>
+            <div class="menu-item-cn">腊肉炒年糕</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Galette de riz sautée aux fruits de mer</div>
+            <div class="menu-item-cn">海鲜炒年糕</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ FRUITS DE MER ══ -->
+    <div id="seafood" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_seafood">Fruits de Mer</h2>
+      <p class="menu-category-cn">海鲜</p>
+      <div class="menu-items">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Bar grillé</div>
+            <div class="menu-item-cn">特色烤海鲈鱼</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Couteaux à l'huile de ciboulette</div>
+            <div class="menu-item-cn">葱油蛏子</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Coques à l'huile de ciboulette</div>
+            <div class="menu-item-cn">葱油蛤蜊</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="images/logo.png" alt="Logo La Maison Pourpre">
+    <h3>LA MAISON POURPRE</h3>
+  </div>
+  <p data-i18n="footer_tagline">Cuisine chinoise traditionnelle · Paris 11ᵉ</p>
+  <p data-i18n="footer_copy">© 2026 La Maison Pourpre</p>
+</footer>
+
+<button id="backToTop">↑</button>
+
+<script src="js/lang.js"></script>
+<script>
+function showCat(id) {
+  document.querySelectorAll('.menu-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.menu-nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+</script>
+</body>
+</html>
