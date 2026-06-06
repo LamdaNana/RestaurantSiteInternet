@@ -35,20 +35,34 @@ const TRANSLATIONS = {
   "info_hours":       { fr: "Jeudi à Mardi<br>11h30 – 22h15<br><small>Fermé le mercredi</small>", zh: "周四至周二<br>11:30 – 22:15<br><small>周三休息</small>" },
   "info_email_title": { fr: "E-mail",     zh: "邮箱"   },
 
-  /* ---- MENU ---- */
+  /* ---- MENU — ONGLETS ---- */
   "menu_hero_title":  { fr: "Notre Carte",  zh: "菜单" },
   "menu_hero_desc":   { fr: "Cuisine chinoise traditionnelle préparée à la commande.", zh: "传统中国菜现点现做。" },
   "allergen_label":   { fr: "Allergènes",   zh: "过敏原" },
   "allergen_text":    { fr: "Pour en savoir plus sur les ingrédients, les allergènes et les méthodes de préparation, vous pouvez appeler La Maison Pourpre.", zh: "如需了解食材、过敏原及烹饪方式，请致电紫屋餐厅。" },
 
-  "cat_entrees":       { fr: "Entrées",                     zh: "前菜"       },
+  "cat_images":        { fr: "Images",                     zh: "照片"       },
+  "cat_horsdoeuvres":  { fr: "Hors-d'œuvres",              zh: "凉菜前菜"   },
   "cat_trad":          { fr: "Spécialités",                 zh: "招牌菜"     },
-  "cat_wok":           { fr: "Plats Principaux",            zh: "主菜"       },
-  "cat_rice":          { fr: "Riz & Nouilles",              zh: "饭面"       },
-  "cat_images":        { fr: "Images",                      zh: "照片"       },
-  "cat_teppan":        { fr: "Plaque Chauffante",           zh: "铁板"       },
-  "cat_rice_cake":     { fr: "Galettes de Riz & Vapeur",    zh: "年糕及蒸食" },
-  "cat_seafood":       { fr: "Fruits de Mer",               zh: "海鲜"       },
+  "cat_soupes":        { fr: "Soupes",                      zh: "汤类"       },
+  "cat_viandes":       { fr: "Viandes",                     zh: "肉类"       },
+  "cat_poissons":      { fr: "Poissons & Fruits de Mer",    zh: "鱼类海鲜"   },
+  "cat_legumes":       { fr: "Légumes",                     zh: "素菜"       },
+  "cat_marmites":      { fr: "Marmites & Sautés",           zh: "砂锅炒菜"   },
+  "cat_platsmijotes":  { fr: "Plats Mijotés",               zh: "炖菜"       },
+  "cat_teppan":        { fr: "Plaques Chauffantes",         zh: "铁板系列"   },
+  "cat_desserts":      { fr: "Desserts",                    zh: "甜品"       },
+  "cat_boissons":      { fr: "Boissons & Vins",             zh: "饮料酒类"   },
+
+  /* ---- MENU — SOUS-SECTIONS BOISSONS ---- */
+  "sub_boissons_chaudes":    { fr: "Boissons Chaudes",    zh: "热饮"       },
+  "sub_boissons_chaudes_cn": { fr: "热饮",                zh: "热饮"       },
+  "sub_boissons_froides":    { fr: "Boissons Froides",    zh: "冷饮"       },
+  "sub_boissons_froides_cn": { fr: "冷饮",                zh: "冷饮"       },
+  "sub_vins":                { fr: "Vins",                zh: "葡萄酒"     },
+  "sub_vins_cn":             { fr: "葡萄酒",              zh: "葡萄酒"     },
+  "sub_alcools":             { fr: "Alcools Chinois",     zh: "中国白酒"   },
+  "sub_alcools_cn":          { fr: "中国白酒",            zh: "中国白酒"   },
 
   /* ---- À PROPOS ---- */
   "about_hero_title": { fr: "À Propos",       zh: "关于我们" },
