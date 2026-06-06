@@ -60,103 +60,52 @@
 
     <!-- NAVIGATION ONGLETS -->
     <div class="menu-nav reveal">
-      <button class="menu-nav-btn" onclick="showCat('images')" data-i18n="cat_images">Images</button>
-      <button class="menu-nav-btn active" onclick="showCat('entrees')" data-i18n="cat_entrees">Entrées</button>
-      <button class="menu-nav-btn" onclick="showCat('specialites')" data-i18n="cat_trad">Spécialités</button>
-      <button class="menu-nav-btn" onclick="showCat('wok')" data-i18n="cat_wok">Plats Principaux</button>
-      <button class="menu-nav-btn" onclick="showCat('rice')" data-i18n="cat_rice">Riz & Nouilles</button>
-      <button class="menu-nav-btn" onclick="showCat('teppan')" data-i18n="cat_teppan">Plaque Chauffante</button>
-      <button class="menu-nav-btn" onclick="showCat('ricecake')" data-i18n="cat_rice_cake">Galettes & Vapeur</button>
-      <button class="menu-nav-btn" onclick="showCat('seafood')" data-i18n="cat_seafood">Fruits de Mer</button>
+      <button class="menu-nav-btn active" onclick="showCat('images', event)" data-i18n="cat_images">Images</button>
+      <button class="menu-nav-btn" onclick="showCat('horsdoeuvres', event)" data-i18n="cat_horsdoeuvres">Hors-d'œuvres</button>
+      <button class="menu-nav-btn" onclick="showCat('specialites', event)" data-i18n="cat_trad">Spécialités</button>
+      <button class="menu-nav-btn" onclick="showCat('soupes', event)" data-i18n="cat_soupes">Soupes</button>
+      <button class="menu-nav-btn" onclick="showCat('viandes', event)" data-i18n="cat_viandes">Viandes</button>
+      <button class="menu-nav-btn" onclick="showCat('poissons', event)" data-i18n="cat_poissons">Poissons</button>
+      <button class="menu-nav-btn" onclick="showCat('legumes', event)" data-i18n="cat_legumes">Légumes</button>
+      <button class="menu-nav-btn" onclick="showCat('marmites', event)" data-i18n="cat_marmites">Marmites & Sautés</button>
+      <button class="menu-nav-btn" onclick="showCat('platsmijotes', event)" data-i18n="cat_platsmijotes">Plats Mijotés</button>
+      <button class="menu-nav-btn" onclick="showCat('teppan', event)" data-i18n="cat_teppan">Plaques Chauffantes</button>
+      <button class="menu-nav-btn" onclick="showCat('desserts', event)" data-i18n="cat_desserts">Desserts</button>
+      <button class="menu-nav-btn" onclick="showCat('boissons', event)" data-i18n="cat_boissons">Boissons & Vins</button>
     </div>
 
     <!-- ══ IMAGES ══ -->
-    <div id="images" class="menu-section">
+    <div id="images" class="menu-section active">
       <h2 class="menu-category-title" data-i18n="cat_images">Images</h2>
       <p class="menu-category-cn">照片</p>
       <div class="menu-items">
         <div class="image-grid">
-
-          <div class="gal-item reveal">
-            <img src="images/viandes.jpg" alt="Viandes" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/specialitesfinal.jpg" alt="Spécialités" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/soupes.jpg" alt="Soupes" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/poissons.jpg" alt="Poissons" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/poissonsbis.jpg" alt="Poissons bis" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/platsmijotes.jpg" alt="Plats mijotés" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/plaqueschauffantes.jpg" alt="Plaques chauffantes" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/plaqueschauffantesbis.jpg" alt="Plaques chauffantes bis" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/marmitesplatsautes.jpg" alt="Marmites et plats sautés" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/legumes.jpg" alt="Légumes" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/legumesbis.jpg" alt="Légumes bis" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/horsdoeuvres.jpg" alt="Hors d'oeuvres" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/horsdoeuvresbis.jpg" alt="Hors d'oeuvres bis" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/orsdoeuvrestrois.jpg" alt="Hors d'oeuvres trois" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/horsdoeuvresquatre.jpg" alt="Hors d'oeuvres quatre" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/desserts.jpg" alt="Desserts" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/boissonsvins.jpg" alt="Boissons et vins" />
-          </div>
-
-          <div class="gal-item reveal">
-            <img src="images/boissons.jpg" alt="Boissons" />
-          </div>
-
+          <div class="gal-item reveal"><img src="images/horsdoeuvres.jpg" alt="Hors-d'œuvres" /></div>
+          <div class="gal-item reveal"><img src="images/horsdoeuvresbis.jpg" alt="Hors-d'œuvres" /></div>
+          <div class="gal-item reveal"><img src="images/orsdoeuvrestrois.jpg" alt="Hors-d'œuvres" /></div>
+          <div class="gal-item reveal"><img src="images/horsdoeuvresquatre.jpg" alt="Hors-d'œuvres" /></div>
+          <div class="gal-item reveal"><img src="images/specialitesfinal.jpg" alt="Spécialités" /></div>
+          <div class="gal-item reveal"><img src="images/soupes.jpg" alt="Soupes" /></div>
+          <div class="gal-item reveal"><img src="images/viandes.jpg" alt="Viandes" /></div>
+          <div class="gal-item reveal"><img src="images/poissons.jpg" alt="Poissons" /></div>
+          <div class="gal-item reveal"><img src="images/poissonsbis.jpg" alt="Poissons" /></div>
+          <div class="gal-item reveal"><img src="images/legumes.jpg" alt="Légumes" /></div>
+          <div class="gal-item reveal"><img src="images/legumesbis.jpg" alt="Légumes" /></div>
+          <div class="gal-item reveal"><img src="images/marmitesplatsautes.jpg" alt="Marmites et plats sautés" /></div>
+          <div class="gal-item reveal"><img src="images/platsmijotes.jpg" alt="Plats mijotés" /></div>
+          <div class="gal-item reveal"><img src="images/plaqueschauffantes.jpg" alt="Plaques chauffantes" /></div>
+          <div class="gal-item reveal"><img src="images/plaqueschauffantesbis.jpg" alt="Plaques chauffantes" /></div>
+          <div class="gal-item reveal"><img src="images/desserts.jpg" alt="Desserts" /></div>
+          <div class="gal-item reveal"><img src="images/boissonsvins.jpg" alt="Boissons et vins" /></div>
+          <div class="gal-item reveal"><img src="images/boissons.jpg" alt="Boissons" /></div>
         </div>
       </div>
     </div>
 
-    <!-- ══ ENTRÉES ══ -->
-    <div id="entrees" class="menu-section active">
-      <h2 class="menu-category-title" data-i18n="cat_entrees">Entrées</h2>
-      <p class="menu-category-cn">前菜</p>
+    <!-- ══ HORS-D'ŒUVRES ══ -->
+    <div id="horsdoeuvres" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_horsdoeuvres">Hors-d'œuvres</h2>
+      <p class="menu-category-cn">凉菜 · 前菜</p>
       <div class="menu-items">
 
         <div class="menu-item reveal">
@@ -205,6 +154,13 @@
           <div>
             <div class="menu-item-name">Tofu aux œufs centenaires</div>
             <div class="menu-item-cn">皮蛋豆腐</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Brioche au porc à la vapeur (6 pcs)</div>
+            <div class="menu-item-cn">小笼包</div>
           </div>
         </div>
 
@@ -283,10 +239,54 @@
       </div>
     </div>
 
-    <!-- ══ PLATS PRINCIPAUX ══ -->
-    <div id="wok" class="menu-section">
-      <h2 class="menu-category-title" data-i18n="cat_wok">Plats Principaux</h2>
-      <p class="menu-category-cn">主菜</p>
+    <!-- ══ SOUPES ══ -->
+    <div id="soupes" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_soupes">Soupes</h2>
+      <p class="menu-category-cn">汤类</p>
+      <div class="menu-items">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Soupe de nouilles au bœuf</div>
+            <div class="menu-item-cn">牛肉面</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Soupe de nouilles aux travers de porc</div>
+            <div class="menu-item-cn">排骨面</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Soupe de nouilles aux légumes</div>
+            <div class="menu-item-cn">蔬菜面</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Soupe de pâte de riz au bœuf</div>
+            <div class="menu-item-cn">牛肉河粉汤</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Soupe de tofu et légumes</div>
+            <div class="menu-item-cn">豆腐蔬菜汤</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ VIANDES ══ -->
+    <div id="viandes" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_viandes">Viandes</h2>
+      <p class="menu-category-cn">肉类</p>
       <div class="menu-items">
 
         <div class="menu-item reveal">
@@ -306,23 +306,187 @@
         <div class="menu-item reveal">
           <div>
             <div class="menu-item-name">Lamelles de porc piquantes</div>
-            <div class="menu-item-cn">鱼香肉丝铁板饭</div>
-            <div class="menu-item-desc">Servi avec riz, œufs, légumes</div>
+            <div class="menu-item-cn">鱼香肉丝</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Poulet sauté aux champignons</div>
+            <div class="menu-item-cn">香菇炒鸡</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Canard laqué</div>
+            <div class="menu-item-cn">北京烤鸭</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Bœuf sauté aux oignons et poivrons</div>
+            <div class="menu-item-cn">洋葱彩椒牛肉</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Agneau sauté au cumin</div>
+            <div class="menu-item-cn">孜然羊肉</div>
           </div>
         </div>
 
       </div>
     </div>
 
-    <!-- ══ RIZ & NOUILLES ══ -->
-    <div id="rice" class="menu-section">
-      <h2 class="menu-category-title" data-i18n="cat_rice">Riz & Nouilles</h2>
-      <p class="menu-category-cn">饭面</p>
+    <!-- ══ POISSONS ══ -->
+    <div id="poissons" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_poissons">Poissons & Fruits de Mer</h2>
+      <p class="menu-category-cn">鱼类 · 海鲜</p>
       <div class="menu-items">
 
         <div class="menu-item reveal">
           <div>
-            <div class="menu-item-name">Riz cantonais</div>
+            <div class="menu-item-name">Bar grillé</div>
+            <div class="menu-item-cn">特色烤海鲈鱼</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Carpe à la sauce pimentée</div>
+            <div class="menu-item-cn">水煮鱼</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Couteaux à l'huile de ciboulette</div>
+            <div class="menu-item-cn">葱油蛏子</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Coques à l'huile de ciboulette</div>
+            <div class="menu-item-cn">葱油蛤蜊</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Crevettes sautées à l'ail</div>
+            <div class="menu-item-cn">蒜蓉虾</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Pâte de riz sautée aux fruits de mer</div>
+            <div class="menu-item-cn">海鲜炒河粉</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Galette de riz sautée aux fruits de mer</div>
+            <div class="menu-item-cn">海鲜炒年糕</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ LÉGUMES ══ -->
+    <div id="legumes" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_legumes">Légumes</h2>
+      <p class="menu-category-cn">素菜</p>
+      <div class="menu-items">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Épinards sautés à l'ail</div>
+            <div class="menu-item-cn">蒜蓉炒菠菜</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Pousses de bambou sautées</div>
+            <div class="menu-item-cn">炒竹笋</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Champignons parfumés sautés</div>
+            <div class="menu-item-cn">香菇炒</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Aubergines à la sauce piquante</div>
+            <div class="menu-item-cn">鱼香茄子</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Tofu mapo (tofu au piment)</div>
+            <div class="menu-item-cn">麻婆豆腐</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Brocolis sautés à l'huître</div>
+            <div class="menu-item-cn">蚝油西兰花</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Haricots verts sautés</div>
+            <div class="menu-item-cn">干煸四季豆</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ MARMITES & PLATS SAUTÉS ══ -->
+    <div id="marmites" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_marmites">Marmites & Plats Sautés</h2>
+      <p class="menu-category-cn">砂锅 · 炒菜</p>
+      <div class="menu-items">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Marmite de tofu et champignons</div>
+            <div class="menu-item-cn">豆腐香菇砂锅</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Marmite de bœuf aux légumes</div>
+            <div class="menu-item-cn">牛肉蔬菜砂锅</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Marmite de porc et chou mariné</div>
+            <div class="menu-item-cn">酸菜猪肉砂锅</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Riz sauté cantonais</div>
             <div class="menu-item-cn">扬州炒饭</div>
             <div class="menu-item-desc">Cuisiné avec des saucisses chinoises</div>
           </div>
@@ -344,29 +508,8 @@
 
         <div class="menu-item reveal">
           <div>
-            <div class="menu-item-name">Riz sauté aux légumes moutarde</div>
-            <div class="menu-item-cn">蔬菜炒饭</div>
-          </div>
-        </div>
-
-        <div class="menu-item reveal">
-          <div>
-            <div class="menu-item-name">Riz blanc</div>
-            <div class="menu-item-cn">白米饭</div>
-          </div>
-        </div>
-
-        <div class="menu-item reveal">
-          <div>
             <div class="menu-item-name">Nouilles sautées aux légumes</div>
             <div class="menu-item-cn">蔬菜炒面</div>
-          </div>
-        </div>
-
-        <div class="menu-item reveal">
-          <div>
-            <div class="menu-item-name">Nouilles sautées aux crevettes</div>
-            <div class="menu-item-cn">炒虾面</div>
           </div>
         </div>
 
@@ -379,38 +522,62 @@
 
         <div class="menu-item reveal">
           <div>
-            <div class="menu-item-name">Pâte de riz sautée au bœuf</div>
-            <div class="menu-item-cn">牛肉炒河粉</div>
-          </div>
-        </div>
-
-        <div class="menu-item reveal">
-          <div>
-            <div class="menu-item-name">Pâte de riz sautée aux fruits de mer</div>
-            <div class="menu-item-cn">海鲜炒河粉</div>
-          </div>
-        </div>
-
-        <div class="menu-item reveal">
-          <div>
-            <div class="menu-item-name">Soupe de nouilles au bœuf</div>
-            <div class="menu-item-cn">牛肉面</div>
-          </div>
-        </div>
-
-        <div class="menu-item reveal">
-          <div>
-            <div class="menu-item-name">Soupe de nouilles aux travers de porc</div>
-            <div class="menu-item-cn">排骨面</div>
+            <div class="menu-item-name">Galette de riz sautée au porc mariné</div>
+            <div class="menu-item-cn">腊肉炒年糕</div>
           </div>
         </div>
 
       </div>
     </div>
 
-    <!-- ══ PLAQUE CHAUFFANTE ══ -->
+    <!-- ══ PLATS MIJOTÉS ══ -->
+    <div id="platsmijotes" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_platsmijotes">Plats Mijotés</h2>
+      <p class="menu-category-cn">炖菜</p>
+      <div class="menu-items">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Porc braisé à la sauce soja</div>
+            <div class="menu-item-cn">红烧肉</div>
+            <div class="menu-item-desc">Poitrine de porc mijotée longuement, fondante et parfumée</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Bœuf mijoté aux épices</div>
+            <div class="menu-item-cn">红烧牛肉</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Travers de porc mijotés aux dattes rouges</div>
+            <div class="menu-item-cn">红枣排骨</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Poulet mijoté aux champignons noirs</div>
+            <div class="menu-item-cn">木耳炖鸡</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Agneau mijoté à la sauce de fermentation</div>
+            <div class="menu-item-cn">红烧羊肉</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ PLAQUES CHAUFFANTES ══ -->
     <div id="teppan" class="menu-section">
-      <h2 class="menu-category-title" data-i18n="cat_teppan">Plats sur Plaque Chauffante</h2>
+      <h2 class="menu-category-title" data-i18n="cat_teppan">Plaques Chauffantes</h2>
       <p class="menu-category-cn">铁板系列 · Servis avec riz, œufs et légumes</p>
       <div class="menu-items">
 
@@ -473,66 +640,198 @@
       </div>
     </div>
 
-    <!-- ══ GALETTES & VAPEUR ══ -->
-    <div id="ricecake" class="menu-section">
-      <h2 class="menu-category-title" data-i18n="cat_rice_cake">Galettes de Riz & Vapeur</h2>
-      <p class="menu-category-cn">年糕及蒸食</p>
+    <!-- ══ DESSERTS ══ -->
+    <div id="desserts" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_desserts">Desserts</h2>
+      <p class="menu-category-cn">甜品</p>
       <div class="menu-items">
 
         <div class="menu-item reveal">
           <div>
-            <div class="menu-item-name">Brioche au porc à la vapeur (6 pcs)</div>
-            <div class="menu-item-cn">小笼包</div>
+            <div class="menu-item-name">Soupe sucrée aux œufs</div>
+            <div class="menu-item-cn">蛋花糖水</div>
           </div>
         </div>
 
         <div class="menu-item reveal">
           <div>
-            <div class="menu-item-name">Galette de riz sautée au porc mariné à la sauce soja</div>
-            <div class="menu-item-cn">腊肉炒年糕</div>
+            <div class="menu-item-name">Riz gluant aux haricots rouges</div>
+            <div class="menu-item-cn">红豆糯米</div>
           </div>
         </div>
 
         <div class="menu-item reveal">
           <div>
-            <div class="menu-item-name">Galette de riz sautée aux fruits de mer</div>
-            <div class="menu-item-cn">海鲜炒年糕</div>
+            <div class="menu-item-name">Beignets de banane au miel</div>
+            <div class="menu-item-cn">蜂蜜炸香蕉</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Perles de coco au lait</div>
+            <div class="menu-item-cn">椰汁西米露</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Glace au sésame noir</div>
+            <div class="menu-item-cn">黑芝麻冰淇淋</div>
           </div>
         </div>
 
       </div>
     </div>
-    
-    <!-- ══ FRUITS DE MER ══ -->
-    <div id="seafood" class="menu-section">
-      <h2 class="menu-category-title" data-i18n="cat_seafood">Fruits de Mer</h2>
-      <p class="menu-category-cn">海鲜</p>
-      <div class="menu-items">
+
+    <!-- ══ BOISSONS & VINS ══ -->
+    <div id="boissons" class="menu-section">
+      <h2 class="menu-category-title" data-i18n="cat_boissons">Boissons & Vins</h2>
+      <p class="menu-category-cn">饮料 · 酒类</p>
+
+      <!-- Boissons chaudes -->
+      <div class="menu-subsection-title" data-i18n="sub_boissons_chaudes">Boissons Chaudes</div>
+      <div class="menu-subsection-cn" data-i18n="sub_boissons_chaudes_cn">热饮</div>
+      <div class="menu-items" style="margin-bottom:40px;">
 
         <div class="menu-item reveal">
           <div>
-            <div class="menu-item-name">Bar grillé</div>
-            <div class="menu-item-cn">特色烤海鲈鱼</div>
+            <div class="menu-item-name">Thé au jasmin</div>
+            <div class="menu-item-cn">茉莉花茶</div>
           </div>
         </div>
 
         <div class="menu-item reveal">
           <div>
-            <div class="menu-item-name">Couteaux à l'huile de ciboulette</div>
-            <div class="menu-item-cn">葱油蛏子</div>
+            <div class="menu-item-name">Thé vert</div>
+            <div class="menu-item-cn">绿茶</div>
           </div>
         </div>
 
         <div class="menu-item reveal">
           <div>
-            <div class="menu-item-name">Coques à l'huile de ciboulette</div>
-            <div class="menu-item-cn">葱油蛤蜊</div>
+            <div class="menu-item-name">Thé oolong</div>
+            <div class="menu-item-cn">乌龙茶</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Café</div>
+            <div class="menu-item-cn">咖啡</div>
           </div>
         </div>
 
       </div>
+
+      <!-- Boissons froides -->
+      <div class="menu-subsection-title" data-i18n="sub_boissons_froides">Boissons Froides</div>
+      <div class="menu-subsection-cn" data-i18n="sub_boissons_froides_cn">冷饮</div>
+      <div class="menu-items" style="margin-bottom:40px;">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Eau minérale</div>
+            <div class="menu-item-cn">矿泉水</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Jus d'orange</div>
+            <div class="menu-item-cn">橙汁</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Soda (Coca, Sprite, Fanta)</div>
+            <div class="menu-item-cn">碳酸饮料</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Bière Tsingtao</div>
+            <div class="menu-item-cn">青岛啤酒</div>
+            <div class="menu-item-desc">Bière blonde chinoise, légère et rafraîchissante</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Bière Harbin</div>
+            <div class="menu-item-cn">哈尔滨啤酒</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Lait de soja froid</div>
+            <div class="menu-item-cn">豆浆</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Vins -->
+      <div class="menu-subsection-title" data-i18n="sub_vins">Vins</div>
+      <div class="menu-subsection-cn" data-i18n="sub_vins_cn">葡萄酒</div>
+      <div class="menu-items" style="margin-bottom:40px;">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Vin rouge — Bordeaux</div>
+            <div class="menu-item-cn">红葡萄酒（波尔多）</div>
+            <div class="menu-item-desc">Bouteille ou verre</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Vin blanc — Bourgogne</div>
+            <div class="menu-item-cn">白葡萄酒（勃艮第）</div>
+            <div class="menu-item-desc">Bouteille ou verre</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Vin rosé</div>
+            <div class="menu-item-cn">玫瑰红葡萄酒</div>
+            <div class="menu-item-desc">Bouteille ou verre</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Alcools chinois -->
+      <div class="menu-subsection-title" data-i18n="sub_alcools">Alcools Chinois</div>
+      <div class="menu-subsection-cn" data-i18n="sub_alcools_cn">中国白酒</div>
+      <div class="menu-items">
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Baijiu — Alcool de sorgho</div>
+            <div class="menu-item-cn">白酒</div>
+            <div class="menu-item-desc">Eau-de-vie traditionnelle chinoise, servie au verre</div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal">
+          <div>
+            <div class="menu-item-name">Shaoxing — Vin de riz jaune</div>
+            <div class="menu-item-cn">绍兴黄酒</div>
+            <div class="menu-item-desc">Vin de riz fermenté, servi chaud ou froid</div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
-    
+
+  </div>
+</section>
 
 <!-- FOOTER -->
 <footer>
@@ -553,12 +852,13 @@
 
 <script src="js/lang.js"></script>
 <script>
-function showCat(id) {
+function showCat(id, e) {
   document.querySelectorAll('.menu-section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.menu-nav-btn').forEach(b => b.classList.remove('active'));
   document.getElementById(id).classList.add('active');
-  event.currentTarget.classList.add('active');
+  if (e && e.currentTarget) e.currentTarget.classList.add('active');
 }
 </script>
 </body>
 </html>
+
