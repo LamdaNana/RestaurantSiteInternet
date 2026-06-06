@@ -45,9 +45,10 @@ const TRANSLATIONS = {
   "cat_trad":          { fr: "Spécialités",                 zh: "招牌菜"     },
   "cat_wok":           { fr: "Plats Principaux",            zh: "主菜"       },
   "cat_rice":          { fr: "Riz & Nouilles",              zh: "饭面"       },
+  "cat_images":        { fr: "Images",                      zh: "照片"       },
+  "cat_teppan":        { fr: "Plaque Chauffante",           zh: "铁板"       },
   "cat_rice_cake":     { fr: "Galettes de Riz & Vapeur",    zh: "年糕及蒸食" },
   "cat_seafood":       { fr: "Fruits de Mer",               zh: "海鲜"       },
-  "cat_teppan":        { fr: "Plaque Chauffante",           zh: "铁板"       },
 
   /* ---- À PROPOS ---- */
   "about_hero_title": { fr: "À Propos",       zh: "关于我们" },
