@@ -612,6 +612,24 @@ nav a:hover { color: var(--red); }
 
 .gallery-masonry .gal-item:hover .gal-overlay { background: rgba(43,26,24,0.25); }
 
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.image-grid .gal-item {
+  margin-bottom: 0;
+}
+
+.image-grid .gal-item img {
+  width: 100%;
+  min-height: 220px;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
 /* Lightbox */
 .lightbox {
   display: none;
