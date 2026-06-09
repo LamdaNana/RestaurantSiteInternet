@@ -106,7 +106,7 @@ const TRANSLATIONS = {
   "gal_desc":        { fr: "Entre plats traditionnels et moments de partage, bienvenue dans l'univers de La Maison Pourpre.", zh: "在传统菜肴与共享时光之间，欢迎来到紫屋的世界。" },
 
   /* ---- FOOTER ---- */
-  "footer_tagline":  { fr: "Cuisine chinoise traditionnelle · Paris 11ᵉ", zh: "传统中国料理 · 巴黎第十一区" },
+  "footer_tagline":  { fr: "Cuisine chinoise traditionnelle · Situé à Belleville", zh: "传统中国料理 · 巴黎第十一区" },
   "footer_copy":     { fr: "© 2026 La Maison Pourpre",  zh: "© 2026 紫屋餐厅" },
 };
 
