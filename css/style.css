@@ -179,7 +179,7 @@ nav a:hover { color: var(--red); }
   height: 100vh;
   min-height: 600px;
   background-color: var(--red-dark);
-  background-image: url('../images/devanturefinal.png');
+  background-image: url('../images/devanurepoupre.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -193,7 +193,7 @@ nav a:hover { color: var(--red); }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('../images/devanturefinal.png');
+  background-image: url('../images/devanurepoupre.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
