@@ -37,7 +37,7 @@ const TRANSLATIONS = {
 
   /* ---- MENU — ONGLETS ---- */
   "menu_hero_title":  { fr: "Notre Carte",  zh: "菜单" },
-  "menu_hero_desc":   { fr: "Cuisine chinoise traditionnelle préparée à la commande.", zh: "传统中国菜现点现做。" },
+  "menu_hero_desc":   { fr: "Cuisine chinoise traditionnelle préparée à la commande sur Belleville", zh: "传统中国菜现点现做。" },
   "allergen_label":   { fr: "Allergènes",   zh: "过敏原" },
   "allergen_text":    { fr: "Pour en savoir plus sur les ingrédients, les allergènes et les méthodes de préparation, vous pouvez appeler La Maison Pourpre.", zh: "如需了解食材、过敏原及烹饪方式，请致电紫屋餐厅。" },
 
