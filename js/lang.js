@@ -100,7 +100,7 @@ const TRANSLATIONS = {
 
   /* ---- GALERIE ---- */
   "gal_hero_title":  { fr: "Galerie",          zh: "图库"       },
-  "gal_hero_desc":   { fr: "L'ambiance et les saveurs de notre restaurant.", zh: "我们餐厅的氛围与美食。" },
+  "gal_hero_desc":   { fr: "L'ambiance et les saveurs de notre restaurant chinois — sur Belleville.", zh: "我们餐厅的氛围与美食。" },
   "gal_label":       { fr: "食膳坊",            zh: "食膳坊"     },
   "gal_title":       { fr: "Un aperçu de nos plats", zh: "菜品一瞥" },
   "gal_desc":        { fr: "Entre plats traditionnels et moments de partage, bienvenue dans l'univers de La Maison Pourpre.", zh: "在传统菜肴与共享时光之间，欢迎来到紫屋的世界。" },
