@@ -69,7 +69,7 @@ const TRANSLATIONS = {
   "about_hero_desc":  { fr: "Une cuisine familiale, simple et authentique.", zh: "家常、质朴、真实的中国料理。" },
   "about_label":      { fr: "La Maison Pourpre", zh: "紫屋餐厅"   },
   "about_title":      { fr: "Un restaurant de quartier", zh: "街区小餐馆" },
-  "about_p1":         { fr: "Situé dans le 11ᵉ arrondissement de Paris, La Maison Pourpre est un petit restaurant familial fréquenté notamment par une clientèle chinoise qui y retrouve les goûts du pays.", zh: "紫屋位于巴黎第十一区，是一家小型家庭餐厅，深受中国顾客喜爱，因为在这里能品尝到家乡的味道。" },
+  "about_p1":         { fr: "Situé dans le 11ᵉ arrondissement de Paris à Beleville, La Maison Pourpre est un petit restaurant familial fréquenté notamment par une clientèle chinoise qui y retrouve les goûts du pays.", zh: "紫屋位于巴黎第十一区，是一家小型家庭餐厅，深受中国顾客喜爱，因为在这里能品尝到家乡的味道。" },
   "about_p2":         { fr: "Ici, pas de mise en scène. Une cuisine honnête, des plats généreux, et un accueil sans façon.", zh: "这里没有刻意的摆设，只有诚实的烹饪、丰盛的菜肴和简单的招待。" },
   "about_p3":         { fr: "La carte regroupe des classiques appréciés — bœuf aux cinq parfums, raviolis grillés, travers de porc, soupes de nouilles — ainsi que des plats sur plaque chauffante qui font la réputation de la maison.", zh: "菜单涵盖众多经典菜肴——五香牛肉、煎饺、排骨、面条汤——以及深受好评的铁板系列。" },
 
