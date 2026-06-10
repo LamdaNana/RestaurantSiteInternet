@@ -37,7 +37,7 @@ const TRANSLATIONS = {
 
   /* ---- MENU — ONGLETS ---- */
   "menu_hero_title":  { fr: "Notre Carte",  zh: "菜单" },
-  "menu_hero_desc":   { fr: "Cuisine chinoise traditionnelle préparée à la commande sur Belleville", zh: "传统中国菜现点现做。" },
+  "menu_hero_desc":   { fr: "Cuisine chinoise traditionnelle préparée à la commande — sur Belleville", zh: "传统中国菜现点现做。" },
   "allergen_label":   { fr: "Allergènes",   zh: "过敏原" },
   "allergen_text":    { fr: "Pour en savoir plus sur les ingrédients, les allergènes et les méthodes de préparation, vous pouvez appeler La Maison Pourpre.", zh: "如需了解食材、过敏原及烹饪方式，请致电紫屋餐厅。" },
 
@@ -66,7 +66,7 @@ const TRANSLATIONS = {
 
   /* ---- À PROPOS ---- */
   "about_hero_title": { fr: "À Propos",       zh: "关于我们" },
-  "about_hero_desc":  { fr: "Un restaurant chinois simple et authentique, situé à Belleville", zh: "家常、质朴、真实的中国料理。" },
+  "about_hero_desc":  { fr: "Un restaurant chinois simple et authentique — situé à Belleville", zh: "家常、质朴、真实的中国料理。" },
   "about_label":      { fr: "La Maison Pourpre", zh: "紫屋餐厅"   },
   "about_title":      { fr: "Un restaurant de quartier", zh: "街区小餐馆" },
   "about_p1":         { fr: "Situé dans le 11ᵉ arrondissement de Paris à Beleville, La Maison Pourpre est un petit restaurant familial fréquenté notamment par une clientèle chinoise qui y retrouve les goûts du pays.", zh: "紫屋位于巴黎第十一区，是一家小型家庭餐厅，深受中国顾客喜爱，因为在这里能品尝到家乡的味道。" },
@@ -88,7 +88,7 @@ const TRANSLATIONS = {
 
   /* ---- CONTACT ---- */
   "contact_hero_title": { fr: "Contact",            zh: "联系我们"   },
-  "contact_hero_desc":  { fr: "Nous trouver et nous contacter.",  zh: "找到我们并联系我们。" },
+  "contact_hero_desc":  { fr: "Nous trouver et nous contacter — sur Belleville.",  zh: "找到我们并联系我们。" },
   "contact_info_label": { fr: "Informations",       zh: "联系信息"   },
   "contact_info_title": { fr: "Coordonnées",        zh: "详细信息"   },
   "contact_access":     { fr: "Accès",              zh: "交通指南"   },
