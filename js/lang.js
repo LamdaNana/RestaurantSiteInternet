@@ -15,8 +15,8 @@ const TRANSLATIONS = {
 
   /* ---- INDEX ---- */
   "hero_sub":       { fr: "食膳坊",      zh: "食膳坊"  },
-  "hero_title":     { fr: "Cuisine Chinoise Traditionnelle", zh: "传统中国美食" },
-  "hero_desc":      { fr: "Une cuisine familiale au cœur de Belleville.", zh: "贝尔维尔的一家家庭式中餐厅。" },
+  "hero_title":     { fr: "Restaurant Chinois Traditionnel", zh: "传统中国美食" },
+  "hero_desc":      { fr: "Un restaurant familial Chinois au cœur de Belleville.", zh: "贝尔维尔的一家家庭式中餐厅。" },
   "btn_carte":      { fr: "Découvrir la carte",  zh: "查看菜单" },
   "btn_find":       { fr: "Nous trouver",         zh: "找到我们" },
 
