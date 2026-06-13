@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lamaisonpourpre-restaurant-chinois-belleville.fr/sitemap.xml
